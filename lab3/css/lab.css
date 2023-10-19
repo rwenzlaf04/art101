@@ -7,3 +7,24 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+  #skeletonprint {
+    width: 200px;
+}
+  #lab3code {
+  width: 800px;
+}
+#task1 {
+  width: 400px;
+}
+#task2code {
+  width: 400px;
+}
+#task2brow {
+  width: 400px;
+}
+#task3code {
+  width: 400px;
+}
+#task3brow {
+  width: 400px;
+}
