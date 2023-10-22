@@ -1,7 +1,19 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Hangman
+// An implementation of the game
+// Author: Ruby Wenzlaff
+// Date: 23 October, 2023
 
+//Jumpstarting a car
+    //Gather materials
+    //Find a car with a charged battery
+    //Identify positive and negative terminals on both cars
+    //Connect jumper cables
+    //Start the working vehicle
+    //Attempt to start dead vehicle
+    //Remove jumper cables
+    //Let the dea vehicle run
+    
 // Constants
 
 // Functions
