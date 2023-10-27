@@ -12,7 +12,7 @@
     //Start the working vehicle
     //Attempt to start dead vehicle
     //Remove jumper cables
-    //Let the dea vehicle run
+    //Let the dead vehicle run
     
 // Constants
 
