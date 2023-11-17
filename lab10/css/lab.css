@@ -36,6 +36,16 @@ background-color: rgb(234, 65, 169);
   background-color: #5596c8;
 }
 
-.special {
-  background-color: rgb(59, 242, 65);
+.text p {
+  display: inline-block;
+  max-width: 60%;
+  margin: 3px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgb(234, 65, 169);
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  
+
 }
