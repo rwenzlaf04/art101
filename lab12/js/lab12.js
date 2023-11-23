@@ -20,6 +20,7 @@ function sortingHat (str) {
   else if (mod == 2) {
     return"Ravenclaw" ;
   }
+
   else if (mod == 3) {
     return"Slytherin" ;
   }
