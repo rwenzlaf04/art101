@@ -8,47 +8,6 @@
 //Loops over the number and outputs the number and the matching text for factors
 
 
-function crashClang() {
-  var longString = "";
-
-  for (var i = 1; i <=200; i++) {
-
-    if(i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
-      longString += i + ".) CrashClangMeow! <br>";
-    }
-
-    else if (i % 3 == 0 && i % 5 == 0) {
-      longSting += i +".) CrashClang!<br>";
-    }
-    
-    else if (i % 3 == 0 && i % 7 == 0) {
-      longString += i + ".) CrashMeow!<br>";
-    }
-
-    else if (i % 5 == 0 && i % 7 == 0) {
-      longString +=  i + ".) ClangMeow!<br>";
-    }
-
-    else if (i % 3 == 0) {
-      longSting  += i + ".) Crash!<br>";
-    }
-
-    else if (i % 5 == 0) {
-      longString += i + ".)Clang!<br>";
-    }
-
-    else if (i % 7 == 0) {
-      longString += i + ".)Meow!<br>";
-    }
-
-    else {
-      longString += i + ".) ----- <br>";
-    }
-  }
-  return longString;
-}
-
-
 console.log("java script is working");
 
 
@@ -83,10 +42,12 @@ function outputToPage (str) {
 
 function crashClangMeow(maxNums, factorObj) {
   //iterate over all of the numbers
-  for (var num=0; num<maxNums; num++) {
+
+}
+  for (var num=0; num<maxNums; num++) 
   debugger;
   //reset output string
-  var outputStr = ""; 
+  var outputStr = "";
   //iterate over the factors from the html
   for (var factor in factorObj) {
       //check to see if this num is a multiple of factor
@@ -100,8 +61,6 @@ function crashClangMeow(maxNums, factorObj) {
       outputStr = " - " + outputStr + "!";
   }
   outputToPage(num.toString() + outputStr)
-}
-}
 function reportError(str) {
   outputEl.innerHTML = "<div class='error'>" + str + "</div>";
 }
