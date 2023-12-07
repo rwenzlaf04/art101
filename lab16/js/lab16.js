@@ -1,17 +1,15 @@
-// lab16.js - JSON & APIs
+// lab16.js - JSON & APIs (XKCD)
 // Author: Ruby Wenzlaff
 // Date: 08 December, 2023
 
 // Using the core $.ajax() method
 $.ajax({
   // The URL for the request (from the api docs)
-  url: "https://yourapiendpoint.com/",
+  url: "https://xkcd.com/info.0.json",
   // The data to send (will be converted to a query string)
   data: { 
           // here is where any data required by the api 
           //   goes (check the api docs)
-          id: 123,
-          api_key: "blahblahblah",
         },
   // Whether this is a POST or GET request
   type: "GET",
@@ -19,10 +17,19 @@ $.ajax({
   dataType : "json",
   // What do we do when the api call is successful
   //   all the action goes in here
-  success: function(data) {
+  success: function(comicObj) {
       // do stuff
-      console.log(data);
+      console.log(comicObj);
+      const title = comicObj.title;
+      const imageURL = comicObj.img;
+      const alt = comicObj.alt; 
+      //jQuery output
+  $("#output").append("<h2>" + title + "</h2>");
+  $("#output").append("<img src '" + imageURL + "' />");
+  $("#output").append ("<p>" + alt + "</p>");
   },
+
+  
   // What we do if the api call fails
   error: function (jqXHR, textStatus, errorThrown) { 
       // do stuff
