@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab 13 - Loops</title>
+	<title>Lab 15 - AJAX</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -17,73 +17,37 @@
 	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
 	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/lab13.js" DEFER></script>
+	<script type="text/javascript" src="./js/lab15.js" DEFER></script>
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab 13 - Loops</h1>
+			<h1>Lab 15 - AJAX</h1>
 			
 			<div class="challenge">
 					<h2>Challenge</h2>
-					<p>Our challenge for the lab was to code a loop that prints the words "Fizz", "Buzz", and "Boom" and to work with a partner as always.</p>
+					<p>Our challenge for the lab was to experiment with jQuery and AJAX. We had to find an interesting API to use on our website.</p>
 			</div>
 
 			<div class="problems">
 					<h2>Problems</h2>
-					<p>I ran into problems in getting my output to show up. I don't feel like I understand loops very well yet, so I think that is why I've had trouble with this lab.</p>
+					<p>I had a slow start with this lab, since I missed the lecture where we talked in depth about APIs. I didn't know what an API key was. After going back to watch the lecture, and asking a new friend, Corey, in my section about APIs, I was able to follow the recipe on the canvas page, and create a working website. The first few times I clicked the Activate! button after I had debugged everything, the random dog images were not loading. They said 404 page not found when I went to their links in the console. I guess it was just those two bad links, though, as when I kept clicking the button the dog images started displaying. </p>
 			</div>
 
 			<div class="reflection">
 					<h2>Reflection</h2>
-					<p>I followed the examples and instructions for coding this assignment, but still had trouble in execution. </p>
+					<p>This lab was fun! I sat down, and I focused on nothing but debugging for a good thirty minutes. My friend showed me an API that generates random images of cute doggies, so that is what I used. I was able to fix all the problems I had with the API, and get the images of cute doggies to display on my website in the end. I am proud of myself for going back in after the fact and figuring this lab out. I am victorious!</p>
 			</div>
 
 			<div class="results">
 					<h2>Results</h2>
-					<h3>CrashClangMeow!</h3>
-					<div id="input">
-					Where should we stop? <input type="number" min =0 max ="300" id="max"><brv>
-					Which factors should we print?<brv>
-					<table>
-						<tr>
-							<th>Factor</th>
-							<th>Prints what?</th>
-						</tr>
-						<tr>
-							<td><input type="number" min=0 max="23" id="num0"></td>
-							<td><input type="text" id="text0"></td>
-						</tr>
-						<tr>
-							<td><input type="number" min=0 max="23" id="num1"></td>
-							<td><input type="text" id="text1"></td>
-						</tr>
-						<tr>
-							<td><input type="number" min=0 max="23" id="num2"></td>
-							<td><input type="text" id="text2"></td>
-						</tr>
-						<tr>
-							<td><input type="number" min=0 max="23" id="num3"></td>
-							<td><input type="text" id="text3"></td>
-						</tr>
-					</table>
-					<button id="submit">Run</button>
-				</div>
-				<h4>Output</h4>
-				<div id = "output"></div>
-				<div class="linkbox">
-					<a class="homelink" href="../index.html">&lt;&lt; Back home</a>
-					<a class="sourcelink" href="js/lab13.js" target="source">Javascript Source &gt;&gt;</a>
-				</div>
+					<div id="output"></div>
+					<h3> Random Puppy Generator </h3>
+					<button id="activate">Activate!</button><br>
+					<img id="dogImage" src=""><br>
 
-
-				
-
-
-		</section>
-		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
+					</div>
 		</nav>
 	</main>
 </body>
